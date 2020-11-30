@@ -1,0 +1,128 @@
+//////////////////////////////////////////////////////////////////////////////
+// Resources for the DieRoller application
+// Copyright (c) 2000, 2020, Tammy Cravit. All rights reserved.
+// May be freely distributed provided this copyright notice is left
+// intact.
+//////////////////////////////////////////////////////////////////////////////
+
+//============================================================================
+// FORM: The main form
+//============================================================================
+
+// Resource ID conventions:
+//    "# of dice" triggers are ID'd 1100+ndice
+//    "# of sides" triggers are ID'd 1200+nsides
+//    Result fields are ID'd 1300+ndice
+//    Checkboxes are ID'd 1400+ndice
+
+// Forms and Alerts
+Form ID 1010 at (0 0 160 160)
+MenuID 9000
+Begin
+    Title "DieRoller 1.5"
+    Label "# of dice:" AutoID at (8 20) Font 0
+    Pushbutton "1" ID 1101 at (PREVRIGHT+5 PREVTOP+1 12 12) Font 0 Group 2
+    Pushbutton "2" ID 1102 at (PREVRIGHT+1 PREVTOP 12 12) Font 0 Group 2
+    Pushbutton "3" ID 1103 at (PREVRIGHT+1 PREVTOP 12 12) Font 0 Group 2
+    Pushbutton "4" ID 1104 at (PREVRIGHT+1 PREVTOP 12 12) Font 0 Group 2
+    Pushbutton "5" ID 1105 at (PREVRIGHT+1 PREVTOP 12 12) Font 0 Group 2
+    Pushbutton "6" ID 1106 at (PREVRIGHT+1 PREVTOP 12 12) Font 0 Group 2
+    Pushbutton "7" ID 1107 at (PREVRIGHT+1 PREVTOP 12 12) Font 0 Group 2
+    Pushbutton "8" ID 1108 at (PREVRIGHT+1 PREVTOP 12 12) Font 0 Group 2
+    Label "# of sides:" AutoID at (Right@47 PREVBOTTOM+3) Font 0
+    Pushbutton "4" ID 1204 at (PREVRIGHT+5 PREVTOP+1 12 12) Font 0 Group 1
+    Pushbutton "6" ID 1206 at (PREVRIGHT+1 PREVTOP 12 12) Font 0 Group 1
+    Pushbutton "8" ID 1208 at (PREVRIGHT+1 PREVTOP 12 12) Font 0 Group 1
+    Pushbutton "10" ID 1210 at (PREVRIGHT+1 PREVTOP 12 12) Font 0 Group 1
+    Pushbutton "12" ID 1212 at (PREVRIGHT+1 PREVTOP 12 12) Font 0 Group 1
+    Pushbutton "20" ID 1220 at (PREVRIGHT+1 PREVTOP 12 12) Font 0 Group 1
+    Pushbutton "%" ID 1299 at (PREVRIGHT+1 PREVTOP 12 12) Font 0 Group 1
+    Button "Roll!" ID 1001 at (Center PREVBOTTOM+8 Auto Auto) Font 1 BoldFrame
+    Label "Results:" AutoID at (Right@45 PREVBOTTOM+8) Font 1
+    SelectorTrigger "--" ID 1301 at (11 PREVBOTTOM+10 16 12) Font 0 Disabled
+    SelectorTrigger "--" ID 1302 at (PREVRIGHT+2 PREVTOP 16 12) Font 0 Disabled
+    SelectorTrigger "--" ID 1303 at (PREVRIGHT+2 PREVTOP 16 12) Font 0 Disabled
+    SelectorTrigger "--" ID 1304 at (PREVRIGHT+2 PREVTOP 16 12) Font 0 Disabled
+    SelectorTrigger "--" ID 1305 at (PREVRIGHT+2 PREVTOP 16 12) Font 0 Disabled
+    SelectorTrigger "--" ID 1306 at (PREVRIGHT+2 PREVTOP 16 12) Font 0 Disabled
+    SelectorTrigger "--" ID 1307 at (PREVRIGHT+2 PREVTOP 16 12) Font 0 Disabled
+    SelectorTrigger "--" ID 1308 at (PREVRIGHT+2 PREVTOP 16 12) Font 0 Disabled
+    Checkbox "" ID 1401 at (15 PREVBOTTOM+3 12 12) Font 0
+    Checkbox "" ID 1402 at (PREVRIGHT+6 PREVTOP 12 12) Font 0
+    Checkbox "" ID 1403 at (PREVRIGHT+6 PREVTOP 12 12) Font 0
+    Checkbox "" ID 1404 at (PREVRIGHT+6 PREVTOP 12 12) Font 0
+    Checkbox "" ID 1405 at (PREVRIGHT+6 PREVTOP 12 12) Font 0
+    Checkbox "" ID 1406 at (PREVRIGHT+6 PREVTOP 12 12) Font 0
+    Checkbox "" ID 1407 at (PREVRIGHT+6 PREVTOP 12 12) Font 0
+    Checkbox "" ID 1408 at (PREVRIGHT+6 PREVTOP 12 12) Font 0
+    Label "Sum of selected dice:" AutoID at (20 PREVBOTTOM+4) Font 0
+    SelectorTrigger "---" ID 1002 at (PREVRIGHT+6 PREVTOP+3 27 12) Font 0 Disabled
+End
+
+Form ID 2000 at (2 7 156 146)
+Modal
+HelpID 8000
+Begin
+    Title "About DieRoller..."
+    Label "---> DieRoller 1.5 <---" AutoID at (23 21) Font 7
+    Label "Copyright (c) 2000, Tammy Cravit" AutoID at (6 PREVBOTTOM+10) Font 0
+    Label "tammy@warmfuzzy.com" AutoID at (PrevLeft PrevBottom) Font 0
+    Label "All rights reserved." AutoID at (PrevLeft PrevBottom) Font 0
+    Label "This program is freeware." AutoID at (PREVLEFT PREVBOTTOM+7) Font 0
+    Label "Tap the       button for more details." AutoID at (Center PrevBottom) Font 0
+    Button "OK" ID 2001 at (Center PREVBOTTOM+5 Auto Auto) Font 0
+    Label "(i)" AutoID at (Right@PrevLeft-15 PrevTop-17) Font 0
+End
+
+Form ID 3000 at (2 9 156 140)
+Modal
+Begin
+    Title "Help..."
+    Label "How to Use DieRoller" AutoID at (25 20) Font 1
+    Label "* Select the # of dice to roll" AutoID at (4 PREVBOTTOM+8) Font 0
+    Label "* Select the # of sides" AutoID at (4 PREVBOTTOM+1) Font 0
+    Label "* Tap the Roll button" AutoID at (4 PREVBOTTOM+1) Font 0
+    Label "* Uncheck die values to exclude" AutoID at (4 PREVBOTTOM+8) Font 0
+    Label "them from the sum." AutoID at (14 PREVBOTTOM+1) Font 0
+    Button "OK" ID 3001 at (Center PREVBOTTOM+10 Auto Auto) Font 0
+End
+
+
+// Bitmaps and Icons
+Icon "icon.bmp" 
+
+
+// Strings
+STRING ID 8000 "DieRoller 1.5\n"\
+    "Copyright (c) 2000\n"\
+    "Tammy Cravit\n"\
+    "tammymakesthings@gmail.com\n"\
+    "All rights reserved.\n"\
+    "null\n"\
+    "DieRoller 1.5 is freeware, and may be distributed freely"\
+    "provided this copyright notice is left intact.\n"\
+    "null\n"\
+    "The latest version may always be found at"\
+    "http://github.com/tammymakesthings/palm_dieroller/\n"\
+    "null\n"\
+    "Developed on a Handspring Visor and a Palm IIIc using a"\
+    "GoType Pro keyboard (www.landware.com), Quartus Forth"\
+    "(http://www.quartus.net/) and pedit"\
+    "(http://www.PaulComputing.com). Many thanks to Neal Bridges,"\
+    "Paul Nevai and the folks at LandWare for the excellent"\
+    "development tools!"
+
+MENU ID 9000
+BEGIN
+	PULLDOWN "Help" BEGIN
+		MENUITEM "Instructions" ID 9001 "I"
+		MENUITEM "About..." ID 9002 "I"
+	END
+END
+
+VERSION ID 1 "1.5.7"
+
+APPLICATIONICONNAME ID 1 "DieRoller"
+
+APPLICATION ID 1 "diE#"
+

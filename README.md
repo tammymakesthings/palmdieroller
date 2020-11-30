@@ -20,7 +20,7 @@ features:
 - The program now saves your # of dice/# of sides settings between invocations
 - An about box, help screen, and menu have been added
 - Multi-bit application icons have been added
-- Since the program no longer requires the PocketC runtime, it's quite a 
+- Since the program no longer requires the PocketC runtime, it's quite a
   bit smaller than the old version.
 
 Future versions of DieRoller may add other features.
@@ -28,23 +28,23 @@ Future versions of DieRoller may add other features.
 ## How Do I Use It?
 
 The user interface is pretty simple. See the Help screen if you need more
-pointers.  
+pointers.
 
 ## Where Do I Get It?
 
 The newest version, with or without source code, can be downloaded from:
 
-https://github.com/tammymakesthings/palm_dieroller/
+https://github.com/tammymakesthings/palmdieroller/
 
 ## Author/Copyright
 
-DieRoller is copyright (c) 2000, 2020, Tammy Cravit 
-<tammymakesthings@gmail.com>. The program and its source code are freeware, 
-and may be distributed under the terms of the Artistic License. Distribution 
+DieRoller is copyright (c) 2000, 2020, Tammy Cravit
+<tammymakesthings@gmail.com>. The program and its source code are freeware,
+and may be distributed under the terms of the Artistic License. Distribution
 requires that:
 
 - The program and its documentation be distributed intact, and that all
-  pieces of the original file be included 
+  pieces of the original file be included
 - None of the copyright notices in the code or documentation may be removed.
 
 ## Known Bugs

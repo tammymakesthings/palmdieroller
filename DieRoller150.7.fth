@@ -1,27 +1,27 @@
 \ DieRoller150.7 2000.09.30 TLC
 
 \ ----------------------------
-\ DieRoller: Gamer's dice 
+\ DieRoller: Gamer's dice
 \            roller for the
 \            PalmPilot.
-\ 
+\
 \ By Tammy Cravit,
 \ tammymakesthings@gmail.com
 \ All rights reserved.
-\ 
-\ This version is released as 
-\ freeware, as-is, with no 
-\ warranty of any kind. This 
-\ program, and its source, may 
+\
+\ This version is released as
+\ freeware, as-is, with no
+\ warranty of any kind. This
+\ program, and its source, may
 \ be freely redistributed,
-\ provided this notice is 
+\ provided this notice is
 \ preserved intact.
 \ ----------------------------
 \ To execute in Quartus Forth:
 \     needs ids
 \     needs DieRoller150.7
 \     go
-\ 
+\ ----------------------------
 \ To compile to a .prc file:
 \     needs ids
 \     needs MakeDieRoller

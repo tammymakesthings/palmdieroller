@@ -19,22 +19,17 @@ needs DieRoller
 ' go (ID) diE# MakePRC DieRoller
 
 .( Copying Resources...) cr
-DRMainForm (ID) tFRM CopyRsrc
+DRMainForm  (ID) tFRM CopyRsrc
 DRAboutForm (ID) tFRM CopyRsrc
-DRHelpForm (ID) tFRM CopyRsrc
-9000 (ID) MBAR CopyRsrc
-1000 (ID) tAIB CopyRsrc
-1 (ID) tAIN CopyRsrc
-1 (ID) tver CopyRsrc
-8000 (ID) tSTR CopyRsrc
+DRHelpForm  (ID) tFRM CopyRsrc
+9000        (ID) MBAR CopyRsrc
+1000        (ID) tAIB CopyRsrc
+1           (ID) tAIN CopyRsrc
+1           (ID) tver CopyRsrc
+8000        (ID) tSTR CopyRsrc
 
-BlankFormID (ID) tFRM 
-DelRsrc drop
-
-MainFormID (ID) tFRM 
-DelRsrc drop
-
-TitledFormID (ID) tFRM 
-DelRsrc drop
+BlankFormID  (ID) tFRM DelRsrc drop
+MainFormID   (ID) tFRM DelRsrc drop
+TitledFormID (ID) tFRM DelRsrc drop
 
 .( ***** Compile Done *****) cr

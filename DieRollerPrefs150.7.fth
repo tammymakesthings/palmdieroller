@@ -12,23 +12,23 @@
 \ \\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
 : >prefs ( -- )
-	\ Save the preferences
-	prefs-size prefs-base >abs 
-	PrefsVersion [ID] diE#
-	PrefSetAppPreferencesV10
-	;
+    \ Save the preferences
+    prefs-size prefs-base >abs
+    PrefsVersion [ID] diE#
+    PrefSetAppPreferencesV10
+    ;
 
-: prefs> ( -- flag ) 
-	\ Get the preferences
-	prefs-size prefs-base >abs 
-	PrefsVersion [ID] diE#
-	PrefGetAppPreferencesV10
-	;
+: prefs> ( -- flag )
+    \ Get the preferences
+    prefs-size prefs-base >abs
+    PrefsVersion [ID] diE#
+    PrefGetAppPreferencesV10
+    ;
 
 : app-init ( -- )
-	prefs> 0 = if
-		3 ndice !
-		6 nsides !
-		>prefs
-	then
-	;
+    prefs> 0 = if
+        3 ndice !
+        6 nsides !
+        >prefs
+    then
+    ;

@@ -89,7 +89,7 @@ End
 
 
 // Bitmaps and Icons
-Icon "icon.bmp" 
+Icon "icon.bmp"
 
 
 // Strings
@@ -103,7 +103,7 @@ STRING ID 8000 "DieRoller 1.5\n"\
     "provided this copyright notice is left intact.\n"\
     "null\n"\
     "The latest version may always be found at"\
-    "http://github.com/tammymakesthings/palm_dieroller/\n"\
+    "http://github.com/tammymakesthings/palmdieroller/\n"\
     "null\n"\
     "Developed on a Handspring Visor and a Palm IIIc using a"\
     "GoType Pro keyboard (www.landware.com), Quartus Forth"\
@@ -114,10 +114,10 @@ STRING ID 8000 "DieRoller 1.5\n"\
 
 MENU ID 9000
 BEGIN
-	PULLDOWN "Help" BEGIN
-		MENUITEM "Instructions" ID 9001 "I"
-		MENUITEM "About..." ID 9002 "I"
-	END
+    PULLDOWN "Help" BEGIN
+        MENUITEM "Instructions" ID 9001 "I"
+        MENUITEM "About..." ID 9002 "I"
+    END
 END
 
 VERSION ID 1 "1.5.7"

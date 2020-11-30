@@ -14,7 +14,7 @@
 
 (id) diE# (id) rsrc use-resources
 
-1010 constant DRMainForm	
+1010 constant DRMainForm
 1100 constant DieNumBase
 1101 constant DieNum1Die
 1102 constant DieNum2Dice

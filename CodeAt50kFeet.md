@@ -41,11 +41,13 @@ As Forth allocates variables, it increments the magic value HERE to indicate
 the address of the next variable to be allocated. So, what Forth does during
 those lines is as follows (for example):
 
+```
     (before anything is done)               HERE=1000
-    here constant prefs-base		        Puts 1000 in prefs-base, HERE=1000
-    variable nsides				            Allocates nsides, HERE=1002
-    variable ndice				            Allocates ndice, HERE=1004
-    here prefs-base - constant prefs-size	Puts 4 in prefs-size, HERE=1004
+    here constant prefs-base                Puts 1000 in prefs-base, HERE=1000
+    variable nsides                         Allocates nsides, HERE=1002
+    variable ndice                          Allocates ndice, HERE=1004
+    here prefs-base - constant prefs-size   Puts 4 in prefs-size, HERE=1004
+```
 
 ### DieRollerAlgo150.7
 
@@ -67,7 +69,7 @@ math geek) generates more random random numbers.
 
 `handle-ctl-select` is the event handler for most of the functionality in the
 program. It invokes different words depending on which UI control is
-selected. The extra code for `AboutForm.OKButton` and `HelpForm.OKButton` 
+selected. The extra code for `AboutForm.OKButton` and `HelpForm.OKButton`
 restores the `ndice`/`nsides` settings when the main form is redisplayed.
 
 `app-main` is the application's main word. However, when the application is
@@ -120,7 +122,7 @@ tricky (at least for me) thing here is that I put the `SetControlValue` stuff
 outside of the if statement to avoid code duplication. It took a while before
 it occurred to me that you could do that.
 
-`do-roll` is what actually gets called when the Roll button is tapped. 
+`do-roll` is what actually gets called when the Roll button is tapped.
 
 `handle-checkbox` is called when one of the roll checkboxes is selected. It
 updates the sum accordingly.
@@ -138,7 +140,7 @@ needs MakeDieRoller
 
 A couple of gotchas I learned when coding this application:
 
-1. Forth has one false value, but many true values. 
+1. Forth has one false value, but many true values.
 
 So,
 
@@ -158,36 +160,36 @@ then
 are not quite the same thing. (Namely, the first doesn't always do what you
 expect it to.
 
-2. The stack is your friend. 
+2. The stack is your friend.
 
-I can see places now where I could rewrite my code to use the stack better, 
+I can see places now where I could rewrite my code to use the stack better,
 and avoid some of the global variables.
 
 ### Tools Used
 
-I'd like to thank the authors/makers of the following tools, which I used 
+I'd like to thank the authors/makers of the following tools, which I used
 in developing DieRoller:
 
 - *Palm, Inc.*: Makers of my Palm IIIc, and of the POSE Emulator
 - *Handspring*: Makers of the Visor Deluxe I used before I got the IIIc
 - *Landware, Inc.*: Makers of the GoType! keyboard I used when coding on my Palm.
 - *Paul Nevai*: Author of the wonderful peditPro text editor for PalmOS
-- *Neal Bridges*: For writing Quartus Forth, and for giving a lot of 
+- *Neal Bridges*: For writing Quartus Forth, and for giving a lot of
   support (technical and moral) to a Forth newcomer
-- *Roger Lawrence*: Along with the other folks at IndiVideo.net, for the 
+- *Roger Lawrence*: Along with the other folks at IndiVideo.net, for the
   Onboard RsrcEdit Resource Editor.
 
 About half of this software was developed on a Windows 2000 PC with VIm and
 Win32Forth. The rest was done on-device with pedit and Onboard
 RsrcEdit. Testing was done on both my Palm IIIc and on POSE. The `BuildPRC`
 utility, from `prc-tools`, was used to compile the resource file on the PC.
-  
+
 ### 2020 Update Comments
 
 A random email from someone who'd found this code inspired me to go rescue it
 from Sourceforge and migrate it over here. It makes me a little sad how many
 of the companies in the Tools Used section no longer exist. Nonetheless, I've
-decided to preserve this code for historical value. Suffice it to say, I'm not 
+decided to preserve this code for historical value. Suffice it to say, I'm not
 updating it anymore, and pull requests will probably be ignored.
 
 It is, however, fun to look back on this and see a bit of my own personal

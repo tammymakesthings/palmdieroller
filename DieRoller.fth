@@ -13,7 +13,7 @@ needs ids
 needs toolkit
 
 use-safe-mode [if]
-needs safe
+    needs safe
 [then]
 
 needs DieRoller150.7

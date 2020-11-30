@@ -22,13 +22,13 @@ the code down into smaller pieces made debugging easier.
 The modules of DieRoller, and their function groupings, are as
 follows:
 
-- DieRoller: Code loader (loads DieRoller150.7)
-- DieRoller150.7: Constants, variables, loads the rest of the code
-- DieRollerAlgo150.7: Functions related to generating die rolls
-- DieRollerMain150.7: Event loop, app launching and termination, and related functions
-- DieRollerPrefs150.7: Loading/saving of app preferences
-- DieRollerRsrcs150.7: Resource ID definitions, loading of the resource DB
-- DieRollerUI150.7: UI functions; most of the actual functionality happens here.
+- `DieRoller`: Code loader (loads `DieRoller150.7`)
+- `DieRoller150.7`: Constants, variables, loads the rest of the code
+- `DieRollerAlgo150.7`: Functions related to generating die rolls
+- `DieRollerMain150.7`: Event loop, app launching and termination, and related functions
+- `DieRollerPrefs150.7`: Loading/saving of app preferences
+- `DieRollerRsrcs150.7`: Resource ID definitions, loading of the resource DB
+- `DieRollerUI150.7`: UI functions; most of the actual functionality happens here.
 
 ### DieRoller150.7
 
@@ -170,14 +170,22 @@ and avoid some of the global variables.
 I'd like to thank the authors/makers of the following tools, which I used
 in developing DieRoller:
 
-- *Palm, Inc.*: Makers of my Palm IIIc, and of the POSE Emulator
-- *Handspring*: Makers of the Visor Deluxe I used before I got the IIIc
-- *Landware, Inc.*: Makers of the GoType! keyboard I used when coding on my Palm.
-- *Paul Nevai*: Author of the wonderful peditPro text editor for PalmOS
-- *Neal Bridges*: For writing Quartus Forth, and for giving a lot of
-  support (technical and moral) to a Forth newcomer
+- *Palm, Inc.*: Makers of my 
+  [Palm IIIc](https://en.wikipedia.org/wiki/Palm_IIIc),
+  and of the [POSE](https://en.wikipedia.org/wiki/Palm_OS_Emulator) Emulator
+- *Handspring*: Makers of the 
+  [Visor Deluxe](https://en.wikipedia.org/wiki/Handspring_(company)#Visor_and_Visor_Deluxe) 
+  I used before I got the IIIc
+- *Landware, Inc.*: Makers of the 
+  [GoType!](https://the-gadgeteer.com/1998/11/08/gotype_keyboard_review/) 
+  keyboard I used when coding on my Palm.
+- *Paul Nevai*: Author of the wonderful 
+  [peditPro](https://people.math.osu.edu/nevai.1/PC/palm/) text editor for PalmOS
+- *Neal Bridges*: For writing [Quartus Forth](http://quartus.net/palmsite.shtml), 
+  and for giving a lot of support (technical and moral) to a Forth newcomer.
 - *Roger Lawrence*: Along with the other folks at IndiVideo.net, for the
-  Onboard RsrcEdit Resource Editor.
+  [Onboard RsrcEdit](http://quartus.net/products/rsrcedit/) 
+  (later Quartus RsrcEdit) Resource Editor.
 
 About half of this software was developed on a Windows 2000 PC with VIm and
 Win32Forth. The rest was done on-device with pedit and Onboard
@@ -200,4 +208,6 @@ in Swift or something just as a learning exercise.
 The PalmPilot really laid the groundwork for what the iOS and Android platforms
 have become. Primitive though it was, it really created the Personal Digital
 Assistant market (which evolved into today's smartphones) in a way that I don't
-think the Apple Newton did. R.I.P., Palm.
+think the Apple Newton did. 
+
+.I.P., Palm. None of us knew the future you were laying the foundation for.

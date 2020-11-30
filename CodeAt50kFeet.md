@@ -41,7 +41,7 @@ As Forth allocates variables, it increments the magic value HERE to indicate
 the address of the next variable to be allocated. So, what Forth does during
 those lines is as follows (for example):
 
-```
+```forth
     (before anything is done)               HERE=1000
     here constant prefs-base                Puts 1000 in prefs-base, HERE=1000
     variable nsides                         Allocates nsides, HERE=1002
@@ -170,27 +170,28 @@ and avoid some of the global variables.
 I'd like to thank the authors/makers of the following tools, which I used
 in developing DieRoller:
 
-- *Palm, Inc.*: Makers of my 
+- *Palm, Inc.*: Makers of my
   [Palm IIIc](https://en.wikipedia.org/wiki/Palm_IIIc),
   and of the [POSE](https://en.wikipedia.org/wiki/Palm_OS_Emulator) Emulator
-- *Handspring*: Makers of the 
-  [Visor Deluxe](https://en.wikipedia.org/wiki/Handspring_(company)#Visor_and_Visor_Deluxe) 
+- *Handspring*: Makers of the
+  [Visor Deluxe](https://en.wikipedia.org/wiki/Handspring_(company)#Visor_and_Visor_Deluxe)
   I used before I got the IIIc
-- *Landware, Inc.*: Makers of the 
-  [GoType!](https://the-gadgeteer.com/1998/11/08/gotype_keyboard_review/) 
+- *Landware, Inc.*: Makers of the
+  [GoType!](https://the-gadgeteer.com/1998/11/08/gotype_keyboard_review/)
   keyboard I used when coding on my Palm.
-- *Paul Nevai*: Author of the wonderful 
+- *Paul Nevai*: Author of the wonderful
   [peditPro](https://people.math.osu.edu/nevai.1/PC/palm/) text editor for PalmOS
-- *Neal Bridges*: For writing [Quartus Forth](http://quartus.net/palmsite.shtml), 
+- *Neal Bridges*: For writing [Quartus Forth](http://quartus.net/palmsite.shtml),
   and for giving a lot of support (technical and moral) to a Forth newcomer.
 - *Roger Lawrence*: Along with the other folks at IndiVideo.net, for the
-  [Onboard RsrcEdit](http://quartus.net/products/rsrcedit/) 
+  [Onboard RsrcEdit](http://quartus.net/products/rsrcedit/)
   (later Quartus RsrcEdit) Resource Editor.
 
-About half of this software was developed on a Windows 2000 PC with VIm and
-Win32Forth. The rest was done on-device with pedit and Onboard
+About half of this software was developed on a Windows 2000 PC with Vim and
+Win32Forth. The rest was done on-device with peditPro and Onboard
 RsrcEdit. Testing was done on both my Palm IIIc and on POSE. The `BuildPRC`
-utility, from `prc-tools`, was used to compile the resource file on the PC.
+utility, from [prc-tools](http://prc-tools.sourceforge.net), was used to
+compile the resource file on the PC.
 
 ### 2020 Update Comments
 
@@ -198,7 +199,10 @@ A random email from someone who'd found this code inspired me to go rescue it
 from Sourceforge and migrate it over here. It makes me a little sad how many
 of the companies in the Tools Used section no longer exist. Nonetheless, I've
 decided to preserve this code for historical value. Suffice it to say, I'm not
-updating it anymore, and pull requests will probably be ignored.
+updating it anymore, and pull requests will probably be ignored. Also, although
+I've updated my email address in the resource script (`DieRoller.rcp`), I have
+not -- and likely will not -- rebuilt the binary resource file
+`DieRollerRsrc.prc` to reflect those changes.
 
 It is, however, fun to look back on this and see a bit of my own personal
 evolution as a software developer reflected in how I approached this problem
@@ -208,6 +212,6 @@ in Swift or something just as a learning exercise.
 The PalmPilot really laid the groundwork for what the iOS and Android platforms
 have become. Primitive though it was, it really created the Personal Digital
 Assistant market (which evolved into today's smartphones) in a way that I don't
-think the Apple Newton did. 
+think the Apple Newton did.
 
-.I.P., Palm. None of us knew the future you were laying the foundation for.
+R.I.P., Palm. None of us knew the future you were laying the foundation for.

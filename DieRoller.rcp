@@ -66,7 +66,7 @@ Begin
     Title "About DieRoller..."
     Label "---> DieRoller 1.5 <---" AutoID at (23 21) Font 7
     Label "Copyright (c) 2000, Tammy Cravit" AutoID at (6 PREVBOTTOM+10) Font 0
-    Label "tammy@warmfuzzy.com" AutoID at (PrevLeft PrevBottom) Font 0
+    Label "tammymakesthings@gmail.com" AutoID at (PrevLeft PrevBottom) Font 0
     Label "All rights reserved." AutoID at (PrevLeft PrevBottom) Font 0
     Label "This program is freeware." AutoID at (PREVLEFT PREVBOTTOM+7) Font 0
     Label "Tap the       button for more details." AutoID at (Center PrevBottom) Font 0

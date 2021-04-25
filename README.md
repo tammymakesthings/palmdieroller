@@ -4,6 +4,7 @@ _Copyright (c) 2000, 2020, Tammy Cravit <tammymakesthings@gmail.com>._
 _All rights reserved._
 
 Salvaged from Sourceforce and moved over to GitHub 2020-11-30.
+See [CodeAt50KFeet.md](CodeAt50kFeet.md) for details.
 
 ## WHAT IS IT?
 
@@ -22,8 +23,6 @@ features:
 - Multi-bit application icons have been added
 - Since the program no longer requires the PocketC runtime, it's quite a
   bit smaller than the old version.
-
-Future versions of DieRoller may add other features.
 
 ## How Do I Use It?
 

@@ -5,6 +5,35 @@ _All rights reserved._
 
 Salvaged from Sourceforce and moved over to GitHub 2020-11-30.
 
+## 2020 Update Comments
+
+A random email from someone who found this code inspired me to go rescue it
+from Sourceforge and migrate it over here. It makes me a little sad how many
+of the companies in the [Tools Used](#tools-used) section no longer exist. 
+Nonetheless, I've decided to preserve this code for historical value. 
+
+Suffice it to say, I'm not updating it anymore, and given that neither the device
+platform nor the toolchain for which it was written exist anymore, 
+pull requests will probably be ignored. Also, although I've updated my email 
+address in the resource script(`DieRoller.rcp`), I have not -- and likely 
+will not -- go to the effort of rebuilding the binary resource file 
+`DieRollerRsrc.prc` to reflect those changes.
+
+It is, however, fun and interesting to look back on this and see a bit of my 
+own personal evolution as a software developer reflected in how I approached 
+this problem 20 years ago and how I might tackle it today. I'm tempted to 
+rewrite this app in Swift or something just as a learning exercise.
+
+The PalmPilot really laid the groundwork for what the iOS and Android platforms
+have become. Primitive though it was, it really created the Personal Digital
+Assistant market (which evolved into today's smartphones) in a way that I don't
+think the Apple Newton did. I had a Newton once, and loved it, but it never quite
+flew in the way the PalmPilot did, for a lot of reasons I understand but am not
+happy about.
+
+R.I.P., Palm. None of us knew back then the future you were laying the 
+foundation for.
+
 ## Code at 50,000 Feet
 
 This document is intended to help new Quartus developers to learn from
@@ -192,26 +221,3 @@ Win32Forth. The rest was done on-device with peditPro and Onboard
 RsrcEdit. Testing was done on both my Palm IIIc and on POSE. The `BuildPRC`
 utility, from [prc-tools](http://prc-tools.sourceforge.net), was used to
 compile the resource file on the PC.
-
-### 2020 Update Comments
-
-A random email from someone who'd found this code inspired me to go rescue it
-from Sourceforge and migrate it over here. It makes me a little sad how many
-of the companies in the Tools Used section no longer exist. Nonetheless, I've
-decided to preserve this code for historical value. Suffice it to say, I'm not
-updating it anymore, and pull requests will probably be ignored. Also, although
-I've updated my email address in the resource script (`DieRoller.rcp`), I have
-not -- and likely will not -- rebuilt the binary resource file
-`DieRollerRsrc.prc` to reflect those changes.
-
-It is, however, fun to look back on this and see a bit of my own personal
-evolution as a software developer reflected in how I approached this problem
-20 years ago and how I might tackle it today. I'm tempted to rewrite this app
-in Swift or something just as a learning exercise.
-
-The PalmPilot really laid the groundwork for what the iOS and Android platforms
-have become. Primitive though it was, it really created the Personal Digital
-Assistant market (which evolved into today's smartphones) in a way that I don't
-think the Apple Newton did.
-
-R.I.P., Palm. None of us knew the future you were laying the foundation for.
